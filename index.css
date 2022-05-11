@@ -30,24 +30,30 @@ main {
     padding-left: 3px;
 }
 
+/* the NFT img styles */
 .container .NFT-img {
-    display: flex;
     margin: 3px;
-    justify-content: center;
 }
 
 .container .NFT-img img {
+    display: flex;
     width: 100%;
     border-radius: 3%;
 }
 
-.container-content .content-title h1 {
-    font-size: 1.3rem;
+/* title styles and effects */
+.container-content .content-title a h1 {
+    font-size: 24px;
     color: hsl(0, 0%, 100%);
 }
 
+/* body styles and effects */
+.container-content .content-title a h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
 .container-content .content-body p {
-    font-size: 13px;
+    font-size: 16px;
     color: hsl(215, 51%, 70%);
 }
 
@@ -64,13 +70,13 @@ main {
 .container-content .content-body .price p {
     color: hsl(178, 100%, 50%);
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 16px;
     font-weight: 600;
-    width: 16ch;
+    width: 12ch;
 }
 
 .container-content .content-body .price img {
-    width: 9px;
+    width: 10px;
     height: fit-content;
     padding-right: 6px;
 }
@@ -81,7 +87,7 @@ main {
 
 .container-content .content-body .time-left p {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 16px;
     font-weight: 400;
     width: 10ch;
 }
@@ -90,10 +96,10 @@ main {
     width: 14px;
     height: 16px;
     padding-top: 1px;
-    height: fit-content;
     padding-right: 6px;
 }
 
+/* break line */
 hr {
     border: 0;
     height: 1px;
@@ -102,13 +108,14 @@ hr {
     margin-bottom: 15px;
 }
 
+/* the creator section */
 .container-content .content-body .creator {
     display: flex;
 }
 
 .container-content .content-body .creator img {
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
     border: 1px;
     border-style: solid;
     border-color: white;
@@ -117,26 +124,34 @@ hr {
 
 .container-content .content-body .creator p {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 16px;
     font-weight: 600;
     word-spacing: 1px;
     padding-left: 6px;
     padding-top: 10px;
 }
 
-.container-content .content-body .creator span {
+a {
+    text-decoration: none;
+}
+
+.container-content .content-body .creator a {
     color: white;
+    font-size: 16px;
+}
+
+.container-content .content-body .creator a:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .attribution a {
     color: white;
-    text-decoration: none;
-    font-size: 13;
+    font-size: 16px;
 }
 
 .attribution {
     color: hsl(215, 32%, 27%);
-    font-size: 13;
+    font-size: 16px;
 }
 
 .attribution {
